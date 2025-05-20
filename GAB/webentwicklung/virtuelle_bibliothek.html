@@ -1,0 +1,147 @@
+<!-- Virtuelle Bibliothek – Block- und Inline-Elemente -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtuelle Bibliothek – Block- und Inline-Elemente</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+    .page-border {
+      border: 8px solid #c2185b; /* dark pink */
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 0;
+      box-sizing: border-box;
+    }
+    .books-container {
+      display: inline-block;
+      width: 90%;
+    }
+    .book {
+      border: 4px solid #f8bbd0; /* light pink */
+      border-radius: 18px;
+      margin: 32px auto;
+      padding: 24px 0 16px 0;
+      background: #fff;
+      max-width: 400px;
+      box-shadow: 0 2px 12px rgba(200,0,100,0.06);
+      display: block;
+    }
+    .book-title {
+      background: #87ceeb; /* sky blue */
+      padding: 10px 0;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      font-size: 1.3em;
+      font-weight: bold;
+      display: block;
+    }
+    .book-author {
+      margin-bottom: 12px;
+      display: block;
+      font-size: 1em;
+      color: #444;
+    }
+    blockquote {
+      margin: 14px auto 12px auto;
+      font-style: italic;
+      color: #333;
+      background: #f3f7fa;
+      border-left: 4px solid #c2185b;
+      padding: 8px 12px;
+      width: 80%;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .book img {
+      margin: 12px auto 8px auto;
+      display: block;
+      border-radius: 6px;
+      border: 2px solid #f8bbd0;
+      max-width: 120px;
+      width: 100%;
+      background: #fff;
+    }
+    pre {
+      background: #fce4ec;
+      color: #222;
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 0.95em;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    hr {
+      border: none;
+      border-top: 2px dashed #f8bbd0;
+      margin: 40px auto;
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-border">
+    <h1>Virtuelle Bibliothek</h1>
+    <div class="books-container">
+      <!-- Buch 1 -->
+      <div class="book">
+        <span class="book-title">Der Herr der Ringe</span>
+        <span class="book-author">Autor: J.R.R. Tolkien</span>
+        <blockquote>
+          Nicht alle, die wandern,<br>
+          sind verloren.
+        </blockquote>
+        <a href="https://www.amazon.com/books/lord_of_the_rings">
+          <img src="https://m.media-amazon.com/images/I/913sMwNHsBL._AC_UF894,1000_QL80_DpWeblab_.jpg" alt="Cover von Der Herr der Ringe">
+        </a>
+        <pre>
+ISBN: 978-3-123456-78-9
+Genre: Fantasy
+        </pre>
+      </div>
+      <hr>
+      <!-- Buch 2 -->
+      <div class="book">
+        <span class="book-title">Harry Potter und der Stein der Weisen</span>
+        <span class="book-author">Autor: J.K. Rowling</span>
+        <blockquote>
+          Es sind unsere Entscheidungen, Harry,<br>
+          die zeigen, wer wir wirklich sind,<br>
+          weit mehr als unsere Fähigkeiten.
+        </blockquote>
+        <a href="https://www.amazon.com/books/harry_potter">
+          <img src="https://cdn.europosters.eu/image/350/art-photo/harry-potter-deathly-hallows-book-cover-i214933.jpg" alt="Cover von Harry Potter und der Stein der Weisen">
+        </a>
+        <pre>
+ISBN: 978-3-987654-32-1
+Genre: Fantasy
+        </pre>
+      </div>
+      <hr>
+      <!-- Buch 3 -->
+      <div class="book">
+        <span class="book-title">Die Schatzinsel</span>
+        <span class="book-author">Autor: Robert Louis Stevenson</span>
+        <blockquote>
+          Kein Schatz auf Erden und kein Glück<br>
+          kann mit einem Freund verglichen werden,<br>
+          der uns in schweren Zeiten beisteht.
+        </blockquote>
+        <a href="https://www.amazon.com/books/treasure_island">
+          <img src="https://cdn.penguin.co.uk/dam-assets/books/9780241733790/9780241733790-jacket-large.jpg" alt="Cover von Die Schatzinsel">
+        </a>
+        <pre>
+ISBN: 978-3-192837-46-5
+Genre: Abenteuer
+        </pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
